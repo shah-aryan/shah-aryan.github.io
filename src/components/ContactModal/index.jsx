@@ -13,19 +13,6 @@ const ContactModal = ({ toggleOpen, toggleClose, children, className }) => {
 
   return (
     <div className="w-full">
-      <button
-        onClick={toggleClose}
-        className="relative inline-flex items-center py-3 overflow-hidden text-white font-semibold bg-secondary px-12 rounded-md group active:bg-secondary-500 focus:outline-none focus:ring"
-        href="/download"
-      >
-        <span className="absolute right-0 md:transition-transform md:translate-x-full md:group-hover:-translate-x-10 hidden md:block">
-          👋
-        </span>
-
-        <span className="text-sm font-medium transition-all group-hover:mr-4">
-          Say hi!
-        </span>
-      </button>
       <Modal
         ariaHideApp={false}
         className={modalClassNames}

@@ -4,7 +4,6 @@ import { Fragment } from "react";
 import { Popover, Transition, Dialog } from "@headlessui/react";
 import { XIcon, MenuAlt1Icon } from "@heroicons/react/outline";
 import { MoonIcon, SunIcon } from "@heroicons/react/solid";
-import ContactModal from "../ContactModal";
 import { Form } from "../ContactModal/Form";
 import { motion } from "framer-motion";
 import useDarkMode from "../../hooks/useDarkMode";
@@ -99,7 +98,7 @@ export default function NavBar() {
             </p>
           </div>
           <div className="-mr-2 -my-2 lg:hidden">
-            <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary dark:text-white">
+            <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-primary focus:outline-none focus:ring-2 focus:ring-inset dark:text-white">
               <span className="sr-only">Open menu</span>
               <MenuAlt1Icon
                 className="h-6 w-6 transform rotate-180"
@@ -207,7 +206,7 @@ export default function NavBar() {
                     )}
                   </motion.div>
                   <div className="-mr-2">
-                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-white hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary">
+                    <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-white hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-inset ">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
@@ -235,14 +234,6 @@ export default function NavBar() {
                       </a>
                     ))}
                   </nav>
-                  <div className="mt-10 flex lg:hidden">
-                    <ContactModal
-                      toggleOpen={modalIsOpen}
-                      toggleClose={toggleModal}
-                    >
-                      <Form />
-                    </ContactModal>
-                  </div>
                 </div>
               </div>
             </div>
