@@ -24,6 +24,7 @@ import successIllustration from "../assets/illustrations/success-vector.svg";
 import brandLogoLight from "../assets/icons/logo-light.png";
 import brandLogoDark from "../assets/icons/logo-dark.png";
 import analyrics from "../assets/projects/analyrics.png";
+import profile from "../assets/profile.jpg";
 
 export default {
   emailIcon,
@@ -52,4 +53,5 @@ export default {
   brandLogoLight,
   brandLogoDark,
   analyrics,
+  profile
 };

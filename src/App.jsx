@@ -6,6 +6,7 @@ import TwoColumnCard from "./components/TwoColumnCard";
 import FeaturedAlternate from "./components/FeaturedAlternate";
 import Footer from "./components/Footer";
 import UsesList from "./components/UsesList";
+import Skills from "./components/Skills";
 
 import "./index.css";
 import SectionWrapper from "./components/Global/SectionWrapper";
@@ -34,6 +35,9 @@ function App() {
           </SectionWrapper>
           <SectionWrapper id="projects" heading="PROJECTS">
             <FeaturedAlternate />
+          </SectionWrapper>
+          <SectionWrapper id="skills" heading="SKILLS">
+            <Skills />
           </SectionWrapper>
           {/* <Footer /> */}
         </>

@@ -29,6 +29,10 @@ const navlinks = [
     name: "Projects",
     href: "#projects",
   },
+  {
+    name: "Skills",
+    href: "#skills",
+  }
 ];
 
 export default function NavBar() {
